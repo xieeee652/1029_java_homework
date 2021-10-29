@@ -48,13 +48,13 @@ public class Main2Activity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i){
                     case R.id.radioButton5:
-                        sugar = "微冰";
+                        ice_opt = "微冰";
                         break;
                     case R.id.radioButton6:
-                        sugar = "少冰";
+                        ice_opt = "少冰";
                         break;
                     case R.id.radioButton7:
-                        sugar = "正常冰";
+                        ice_opt = "正常冰";
                         break;
 
                 }

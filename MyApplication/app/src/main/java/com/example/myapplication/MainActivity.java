@@ -47,12 +47,15 @@ public class MainActivity extends AppCompatActivity {
         if (data == null) return;
 
         if (requestCode == 1) {
-            if (requestCode == 101) {
+            if (resultCode == 101) {
                 Bundle b = data.getExtras();
                 String str1 = b.getString("drink");
                 String str2 = b.getString("sugar");
                 String str3 = b.getString("ice");
-                tv_meal.setText(String.format("飲料: %s\n\n甜度: %s\n\n冰塊: %s\n\n"+1, str1, str2, str3));
+                tv_meal.setText(String.format("飲料: %s\n\n甜度: %s\n\n冰塊: %s\n\n",
+                        str1,
+                        str2,
+                        str3));
             }
              /*   case 100:
                     if(resultCode == 0)
